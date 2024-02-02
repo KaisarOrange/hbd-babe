@@ -1,5 +1,6 @@
 <script>
 	import { fade } from 'svelte/transition';
+	import { sound } from 'svelte-sound';
 	let stage = 0;
 </script>
 
@@ -24,6 +25,7 @@
 				on:click={() => stage++}>Pencet ini babe</button
 			>
 		</div>
+		<audio autoplay loop src="/hbd.mp3"></audio>
 	{/if}
 	{#if stage === 2}
 		<h1 in:fade={{ duration: 1500, delay: 500 }} class="text-2xl font-bold">
@@ -45,6 +47,7 @@
 			class="btn bg-blue-400 mt-4 rounded-md p-2 font-bold"
 			on:click={() => stage++}>Pencet ini babe</button
 		>
+		<audio autoplay loop src="/hbd.mp3"></audio>
 	{/if}
 	{#if stage === 3}
 		<h1 in:fade={{ duration: 1000, delay: 500 }} class="text-2xl font-bold">
@@ -61,6 +64,7 @@
 			class="btn bg-blue-400 mt-4 rounded-md p-2 font-bold"
 			on:click={() => stage++}>Pencet ini babe</button
 		>
+		<audio autoplay loop src="/festin.mp3"></audio>
 	{/if}
 
 	{#if stage === 4}
@@ -73,6 +77,7 @@
 		<h1 in:fade={{ duration: 1000, delay: 1000 }} class="font-bold text-xl mt-2">
 			Buka kadonya baby!
 		</h1>
+		<audio autoplay loop src="/hbd.mp3"></audio>
 	{/if}
 
 	{#if stage === 5}
@@ -101,6 +106,7 @@
 			class="btn bg-blue-400 mt-4 rounded-md p-2 font-bold"
 			on:click={() => stage++}>Pencet ini babe</button
 		>
+		<audio autoplay loop src="/hbd6.mp3"></audio>
 	{/if}
 
 	{#if stage === 6}
@@ -111,5 +117,7 @@
 		>
 			<img class="w-40" src="/baby12.jpg" alt="" />
 		</div>
+		<audio autoplay loop src="/hbd.mp3"></audio>
 	{/if}
+	<audio autoplay loop src="/hbd.mp3"></audio>
 </div>
